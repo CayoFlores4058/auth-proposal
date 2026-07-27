@@ -4,7 +4,6 @@ import ArquitecturaView from '@/views/ArquitecturaView.vue'
 import ModeloDatosView from '@/views/ModeloDatosView.vue'
 import FlujoAutenticacionView from '@/views/FlujoAutenticacionView.vue'
 import MigracionView from '@/views/MigracionView.vue'
-import TradeoffsView from '@/views/TradeoffsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -43,12 +42,6 @@ const router = createRouter({
       name: 'migracion',
       component: MigracionView,
       meta: { title: 'Estrategia de migración', short: 'Migración' },
-    },
-    {
-      path: '/trade-offs',
-      name: 'trade-offs',
-      component: TradeoffsView,
-      meta: { title: 'Decisiones abiertas', short: 'Trade-offs' },
     },
   ],
 })
